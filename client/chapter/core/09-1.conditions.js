@@ -30,16 +30,29 @@ const watchingMovie = () => {
 };
 
 // 영화 볼거임?
-let didWatchMovie = 'no';
-let goingToWatchMovie = 'yes';
+// let didWatchMovie = 'no';
+// let goingToWatchMovie = 'yes';
 
-let movieMessage = didWatchMovie.includes('no')
-  ? '그거 재밌음'
-  : goingToWatchMovie.includes('yes')
-    ? '같이 보실?'
-    : '별로.';
+let didWatchMovie = prompt('영화 봤음?');
+let goingToWatchMovie = prompt('같이 보자');
 
-console.log(movieMessage);
+// let movieMessage = didWatchMovie.includes('no')
+//   ? '그거 재밌음'
+//   : goingToWatchMovie.includes('yes')
+//     ? '같이 보실?'
+//     : '별로.';
+
+// console.log(movieMessage);
+
+if (didWatchMovie.includes('yes')) {
+  console.log('그거 재밌음');
+} else {
+  if (goingToWatchMovie.includes('yes')) {
+    console.log('같이 보실');
+  } else {
+    console.log('별로');
+  }
+}
 
 // 조건부 연산자
 // 멀티 조선부 연산자 식
