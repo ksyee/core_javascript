@@ -1,3 +1,5 @@
+const { clear } = require('console');
+
 module.exports = {
   env: {
     browser: true,
@@ -5,6 +7,10 @@ module.exports = {
     node: true,
   },
   extends: 'eslint:recommended',
+  // globals: {
+  //   getNode: 'readonly',
+  //   clearContents: 'readonly',
+  // },
   overrides: [
     {
       env: {
